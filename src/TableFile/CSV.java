@@ -71,11 +71,9 @@ public class CSV {
             FileReader fr = new FileReader(fileName);
             BufferedReader br = new BufferedReader(fr);
             clear();
-            boolean eof = false;
-            while(!eof) {
+            while(true) {
                 String str = br.readLine();
                 if (str == null){
-                    eof = true;
                     break;
                 }
                 String[] row = str.split(",");

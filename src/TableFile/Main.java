@@ -1,5 +1,7 @@
 package TableFile;
 
+import TableFile.CSV;
+
 public class Main {
     static public void main(String[]args){
         CSV table = new CSV();
@@ -14,6 +16,5 @@ public class Main {
         table.save(file);
         table.load(file);
         table.show();
-
     }
 }
